@@ -1,0 +1,19 @@
+{
+  "cSpell.words": [
+    "Unverify",
+    "askokcancel",
+    "numpy",
+    "rglob",
+    "sklearn",
+    "timbral",
+    "tinydb",
+    "tolist",
+    "winfo",
+    "xscrollcommand",
+    "xview",
+    "yscrollcommand",
+    "yview"
+  ],
+  "editor.rulers": [79],
+  "python.pythonPath": "/Users/andreasnasman/.local/share/virtualenvs/app-_zg8jI1Y/bin/python"
+}

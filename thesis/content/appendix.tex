@@ -1,0 +1,27 @@
+\bgroup{}
+
+\newcommand{\name}{Appendix}
+\chapter*{\name}
+\addcontentsline{toc}{chapter}{\name}
+
+\section*{Repository}
+ {\color{blue}\url{https://github.com/AndreasNasman/masters-thesis/}}
+
+\section*{Python source code}
+\lstset{
+    basicstyle=\color{darcula-orange}\tiny,
+}
+
+\begin{mdframed}[style=code,nobreak=false]
+    \lstinputlisting[title={timbral\_models.py}]{../app/logic/timbral_models.py}
+\end{mdframed}
+
+\begin{mdframed}[style=code,nobreak=false]
+    \lstinputlisting[title={machine\_learning.py}]{../app/logic/machine_learning.py}
+\end{mdframed}
+
+\newpage\begin{mdframed}[style=code,nobreak=false]
+    \lstinputlisting[title={main.py}]{../app/main.py}
+\end{mdframed}
+
+\egroup{}

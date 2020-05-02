@@ -1,0 +1,77 @@
+\ProvidesPackage{preamble}
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[swedish,english]{babel}
+\usepackage{csquotes}
+\usepackage[en-US]{datetime2}
+\usepackage[block=space]{biblatex}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage[a4paper,margin=2.5cm,lmargin=4.5cm]{geometry}
+\usepackage[nonumberlist,notranslate,style=long,toc]{glossaries-extra}
+\usepackage{cleveref}
+
+\definecolor{abo-akademi-yellow}{HTML}{D2921D}
+\definecolor{abo-akademi-red}{HTML}{B11116}
+\definecolor{darcula-background}{HTML}{282A36}
+\definecolor{darcula-comment}{HTML}{6272A4}
+\definecolor{darcula-cyan}{HTML}{8BE9FD}
+\definecolor{darcula-foreground}{HTML}{F8F8F2}
+\definecolor{darcula-green}{HTML}{50FA7B}
+\definecolor{darcula-orange}{HTML}{FFB86C}
+\definecolor{darcula-pink}{HTML}{FF79C6}
+\definecolor{darcula-purple}{HTML}{BD93F9}
+\definecolor{info-background}{HTML}{EEF8FE}
+\definecolor{info-border}{HTML}{C8DDE8}
+
+\hypersetup{
+    colorlinks,
+    citecolor=abo-akademi-yellow,
+    linkcolor=abo-akademi-red,
+    urlcolor=darcula-comment,
+}
+
+\lstset{
+    basicstyle=\color{darcula-orange}\scriptsize,
+    breaklines,
+    commentstyle=\color{darcula-purple},
+    identifierstyle=\color{darcula-foreground},
+    keywordstyle=\color{darcula-pink},
+    language=Python,
+    stringstyle=\color{darcula-green},
+    title=\lstname,
+}
+\captionsetup[lstlisting]{font={color=darcula-cyan,tiny}}
+
+\mdfdefinestyle{code}{
+    backgroundcolor=darcula-background,
+    nobreak,
+}
+\mdfdefinestyle{info}{
+    backgroundcolor=info-background,
+    linecolor=info-border,
+    nobreak,
+}
+
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \lhead{\textit{Andreas Näsman}}
+    \rhead{\thepage}
+    \setlength{\headheight}{15pt}
+    \renewcommand{\headrulewidth}{0pt}
+}
+\pagestyle{plain}
+
+\titleformat{\chapter}[hang]{\bf\Huge}{\thechapter}{20pt}{}
+\onehalfspacing
+\makeglossaries{}
+\addbibresource{references.bib}

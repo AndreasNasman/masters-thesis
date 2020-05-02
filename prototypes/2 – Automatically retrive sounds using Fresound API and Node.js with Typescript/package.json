@@ -1,0 +1,24 @@
+{
+  "name": "second-prototype",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.5",
+    "@types/yargs": "^15.0.4",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "ts-node": "^8.6.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "node-fetch": "^2.6.0",
+    "typescript": "^3.8.3",
+    "yargs": "^15.3.0"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src ts-node -r dotenv/config src/index.ts"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cSpell.enableFiletypes": [
+    "!jsonc",
+    "!plaintext"
+  ],
+  "cSpell.words": ["boominess", "camelcase", "promisify", "timbral"],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false,
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ]
+}
